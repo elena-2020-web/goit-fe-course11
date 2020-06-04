@@ -1,0 +1,122 @@
+.header {
+  background-image: linear-gradient(
+      rgba(243, 129, 129, 0.9) 0%,
+      rgba(252, 227, 138, 0.9) 100%
+    ),
+    url(../images/slider.jpg);
+  background-size: cover;
+  padding-top: 24px;
+  padding-bottom: 230px;
+}
+@media (min-resolution: 192dpi) {
+  .header {
+    background-image: linear-gradient(
+        rgba(243, 129, 129, 0.9) 0%,
+        rgba(252, 227, 138, 0.9) 100%
+      ),
+      url(../images/slider@2x.jpg);
+  }
+}
+.navigation {
+  display: flex;
+  align-items: baseline;
+}
+.header__navigation {
+  margin-bottom: 160px;
+}
+.logo {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 494px;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.menu-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.menu-list__link {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.menu-list__link::after {
+  content: '';
+  display: block;
+  width: 0;
+  border-bottom: 3px solid rgb(252, 227, 138);
+  padding-bottom: 8px;
+  transition: width 200ms linear;
+}
+.menu-list__link:hover::after {
+  width: 100%;
+}
+.menu-list__link:hover,
+.menu-list__link:focus {
+  color: rgb(252, 227, 138);
+}
+.sale-list {
+  display: flex;
+}
+.sale-list__icon {
+  fill: #fff;
+  transition: all 0.2s linear;
+}
+.sale-list__icon_cart {
+  width: 18px;
+  height: 15px;
+  margin-right: 40px;
+}
+.sale-list__icon_glass {
+  width: 18px;
+  height: 18px;
+}
+.sale-list__item:hover .sale-list__icon,
+.sale-list__item:focus .sale-list__icon {
+  fill: rgb(252, 227, 138);
+}
+.sale-btn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.header__title {
+  font-size: 72px;
+  font-family: $third-font;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 180px;
+  margin-bottom: 120px;
+}
+.header__title-block {
+  display: block;
+  font-size: 150px;
+  font-family: $main-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 36px;
+  line-height: 0.933;
+}
+.learn-btn {
+  display: block;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 10px 30px;
+}

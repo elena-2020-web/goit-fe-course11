@@ -1,0 +1,118 @@
+.team {
+  padding-bottom: 84px;
+}
+.team__section-title {
+  margin-bottom: 46px;
+}
+.team__description {
+  font-size: 15px;
+  font-family: var(--secondary-font);
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+.team__list-items {
+  flex-basis: 380px;
+}
+.team__img-wraper {
+  position: relative;
+}
+.team__list-foto {
+  margin-bottom: 30px;
+}
+.team__list-items:hover .team__overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px rgb(149, 225, 211);
+  transition: opacity 200ms linear;
+}
+.team__list-items:hover .team__list-foto {
+  transform: translate(-10px, -10px);
+  transition: transform 200ms linear;
+}
+.team__overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(243, 129, 129, 0.9) 0%,
+    rgba(252, 227, 138, 0.9) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.team__overlay-list {
+  display: flex;
+}
+.team__overlay-items {
+  width: 56px;
+  height: 56px;
+  background-color: rgb(252, 227, 138);
+}
+.team__overlay-items:not(:last-child) {
+  border-right: 1px solid rgb(243, 129, 129);
+}
+.team__overlay-link:hover {
+  background-color: rgb(243, 129, 129);
+}
+.team__overlay-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 200ms linear;
+}
+.team__overlay-icon {
+  fill: rgb(243, 129, 129);
+  transition: all 200ms linear;
+}
+.team__overlay-icon_facebook {
+  width: 13px;
+  height: 26px;
+}
+.team__overlay-icon_twitter {
+  width: 26px;
+  height: 22px;
+}
+.team__overlay-icon_pinterest {
+  width: 21px;
+  height: 26px;
+}
+.team__overlay-icon_instagram {
+  width: 26px;
+  height: 26px;
+}
+.team__overlay-items:hover .team__overlay-icon,
+.team__overlay-items:focus .team__overlay-icon {
+  fill: rgb(255, 255, 255);
+}
+.team__list-items-name {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.team__list-items-position {
+  font-size: 15px;
+  font-family: $secondary-font;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
